@@ -1,0 +1,138 @@
+body {
+  font-family: 'arial', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('./imagens/pecas-de-moto-1200x900.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(90deg, #fdce60 0%, #e1720a 90%);
+  padding: 32px 0 16px 0;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(41, 41, 41, 0.08);
+  font-size: 2.5rem;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-family: 'agressive', Arial, sans-serif;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+nav a {
+  color: #490202;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: hsl(120, 16%, 96%);
+}
+
+main {
+  max-width: 1000px;
+  margin: 30px;
+  background: #b8b7b7;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  padding: 32px 24px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInMain 1.2s ease-out forwards;
+}
+
+@keyframes fadeInMain {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main img {
+  max-width: 100%;
+  height: 220px;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+main img:hover {
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #f13b09d6;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 16px 4px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+button {
+  background-color: #0d922a;
+  color: rgb(237, 236, 236);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+header img {
+  max-width: 210px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+}
